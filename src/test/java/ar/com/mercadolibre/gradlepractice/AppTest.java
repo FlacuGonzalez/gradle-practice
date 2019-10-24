@@ -3,7 +3,10 @@
  */
 package ar.com.mercadolibre.gradlepractice;
 
+import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
@@ -11,4 +14,12 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
+
+    @Test public void testMockito() {
+        Integer numero = Mockito.mock(Integer.class);
+        Mockito.doReturn(3).when(numero).intValue();
+        Assert.assertEquals(3,numero.intValue());
+
+    }
+
 }
