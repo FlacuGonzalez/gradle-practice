@@ -26,9 +26,12 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+<<<<<<< HEAD
 
     // Use Mockito
     testCompile 'org.mockito:mockito-core:2.+'
+=======
+>>>>>>> parent of 38688af... Add mockito dependency
 }
 
 application {

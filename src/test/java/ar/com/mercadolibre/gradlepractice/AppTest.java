@@ -15,11 +15,4 @@ public class AppTest {
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
 
-    @Test public void testMockito() {
-        Integer numero = Mockito.mock(Integer.class);
-        Mockito.doReturn(3).when(numero).intValue();
-        Assert.assertEquals(3,numero.intValue());
-
-    }
-
 }
